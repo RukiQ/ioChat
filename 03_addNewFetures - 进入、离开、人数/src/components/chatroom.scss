@@ -1,0 +1,71 @@
+
+.chatZone {
+    margin-right: 200px;
+    overflow: auto;
+
+    .userName {
+        /* position: fixed;
+        bottom:  */
+        text-align: center;
+        margin: 10px;
+        font-weight: bold;
+        color: blueviolet;
+    }
+    
+    .input-box {
+        background: #000;
+        padding: 3px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 2;
+    
+        input {
+            border: 0;
+            padding: 10px;
+            width: 90%;
+            margin-right: .5%;
+        }
+    
+        button {
+            width: 9%;
+            background: rgb(130, 224, 255);
+            border: none;
+            padding: 10px;
+        }
+    }
+    
+    #messages {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    
+        li {
+            padding: 5px 10px;
+    
+            &:nth-child(odd) {
+                background: #eee;
+            }
+        }
+    }
+    
+    .tips {
+        background: #fff;
+        text-align: center;
+        margin-top: 10px;
+        color: green;
+    }
+}
+
+.userList {
+    position: absolute;
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-left: 2px solid #ddd;
+
+    .userNum {
+        padding: 5px;
+    }
+}
